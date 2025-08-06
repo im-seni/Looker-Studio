@@ -12,9 +12,10 @@
         }
         iframe {
             display: block;
-            width: 100%;
+            margin: 0 auto;
+            width: 100%;          /* 화면에 꽉 차도록 */
+            max-width: 1200px;    /* 데스크톱 기준 가로 제한 */
             height: calc(100vw * 338 / 600); /* 600:338 비율 유지 */
-            max-height: 100vh;
             border: 0;
         }
     </style>
@@ -28,6 +29,7 @@
     </iframe>
 </body>
 </html>
+
 
 
 
