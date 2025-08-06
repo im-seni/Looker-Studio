@@ -4,27 +4,26 @@
     <meta charset="UTF-8">
     <title>Looker Studio Report</title>
     <style>
-        body { margin: 0; padding: 0; }
-        .iframe-container {
-            max-width: 600px;
+        html, body {
+            margin: 0;
+            padding: 0;
             width: 100%;
-            margin: 0 auto;
+            height: 100%;
         }
-        .iframe-container iframe {
-            width: 100%;
-            height: auto;
-            aspect-ratio: 3 / 4;
+        iframe {
+            width: 100vw;   /* 화면 전체 가로 */
+            height: 100vh;  /* 화면 전체 세로 */
             border: 0;
         }
     </style>
 </head>
 <body>
-    <div class="iframe-container">
-        <iframe src="https://lookerstudio.google.com/embed/reporting/c8e02d0a-9d36-4135-be9b-4b9d3919d97c/page/tEnnC"
-            frameborder="0"
-            allowfullscreen
-            sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox">
-        </iframe>
-    </div>
+    <iframe 
+        src="https://lookerstudio.google.com/embed/reporting/c8e02d0a-9d36-4135-be9b-4b9d3919d97c/page/tEnnC"
+        frameborder="0"
+        allowfullscreen
+        sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox">
+    </iframe>
 </body>
 </html>
+
