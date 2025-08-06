@@ -13,9 +13,10 @@
         .iframe-container {
             position: relative;
             width: 100%;
-            max-width: 1920px;         /* 데스크톱 화면 최대 너비 제한 */
+            max-width: 1920px;         /* 데스크톱 화면 최대 너비 */
             margin: 0 auto;
             aspect-ratio: 600 / 338;   /* 원래 비율 유지 */
+            max-height: 100vh;         /* 세로 화면에 맞춤 */
         }
         .iframe-container iframe {
             position: absolute;
@@ -38,6 +39,7 @@
     </div>
 </body>
 </html>
+
 
 
 
